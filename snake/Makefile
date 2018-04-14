@@ -6,7 +6,7 @@ TARGET:=s
 all: $(TARGET)
 
 $(TARGET):
-	$(CC) s.c -o $(TARGET)
+	$(CC) s.c -o $(TARGET) -lpthread
 
 run: $(TARGET)
 	./$(TARGET)
